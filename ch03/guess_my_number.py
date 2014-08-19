@@ -54,4 +54,4 @@ print()
 print("\tYou guessed it! The number was", the_number)
 print("\tAnd it only took you", tries, "tries!")
 
-input("\n\nPress enter to exit")
+input("\n\nPress enter to exit.")
