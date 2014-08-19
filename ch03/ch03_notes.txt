@@ -1,0 +1,67 @@
+Title:
+ - Branching, While Loops and Program Planning: The Guess My Number Game
+Chapter Objectives:
+ - To
+   - Generate random numbers using randint() and randrange()
+   - Use if statements to execute code based on a condition
+   - Use an else clause to make a choice based on a condition
+   - Use elif clauses to make a choice based on several conditions
+   - Use while loops to repeat parts of your program
+   - Plan your programs using psuedocode
+
+***
+Notes
+***
+ - To generate random integers:
+     ...
+     import random # important!
+     ...
+     die1 = random.randint(1,6)
+     die2 = random.randrange(6) + 1
+   - You generally call an imported function through the imported name
+   - die1 will pick a random number between 1 and 6
+   - die2 will pick a random number between 0 and 5, then add 1 to it
+ - if statements allow you to branch your code
+     if condition:
+         do something
+     ...
+     if password == "correct password": # == is comparison
+         print("Access Granted")
+ - Other comparison operators:
+     ==   equal to        (5 == 5)    True
+     !=   not equal to    (8 != 5)    True
+      >   greater than    (3 > 10)    False
+      <   less than       (5 < 8)     True
+     >=   greater than/
+               equal to   (5 >= 10)   False
+     <=   less than/
+               equal to   (5 <= 5)    True
+ - Use indentation to create blocks of code:
+     if password == "correct password":
+         print("Access Granted")
+         print("Welcome! You must be someone very important.")
+ - Use the else condition to do something if the condition evaluates to false:
+     if password == "correct password":
+         print("Access Granted")
+     else:
+         print("Access Denied")
+ - Evaluate multiple possible outcomes of an if statement using elif
+     if condition == 1:
+         do thing 1
+     elif condition == 2:
+         do thing 2
+     elif condition == 3:
+         do thing 3
+     else:
+         default fail condition
+ - Creating while loops
+   - While [something] is true, repeat [action]
+   - see while_loop.py
+   - Be sure to update the sentry value!
+       counter = 0
+       while counter <= 10:
+           print(counter)
+           counter += 1 # updating the sentry value
+ - Try and avoid infinite loops
+ - ANY VALUE CAN BE TREATED AS TRUE/FALSE
+   - see maitre_d.py
