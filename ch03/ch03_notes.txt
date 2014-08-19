@@ -56,7 +56,7 @@ Notes
          default fail condition
  - Creating while loops
    - While [something] is true, repeat [action]
-   - see while_loop.py
+   - See while_loop.py
    - Be sure to update the sentry value!
        counter = 0
        while counter <= 10:
@@ -65,3 +65,31 @@ Notes
  - Try and avoid infinite loops
  - ANY VALUE CAN BE TREATED AS TRUE/FALSE
    - see maitre_d.py
+   - if money:   IS THE SAME AS   if money != 0:
+   - If a value is empty or zero, it is false - everything else is true.
+ - Sometimes intentional infinite loops can be used.
+   - See finicky_counter.py
+   - Demonstrates break and continue
+ - Multiple conditions can be used in a single if statement
+   - This is called a compound condition
+   - See exclusive_network.py
+ - Recall 'and' (both) and 'or' (either) logical operators
+ - Psuedocode is a good way to plan your programs
+       if you can think of a new and useful product
+           then that's your product
+       otherwise
+           repackage an existing product as your product
+       make an infomercial about your product
+       show the infomercial on TV
+       charge $100 per unit of your product
+       sell 10,000 units of your product
+   - Use stepwise refinement to break down the problem even further.
+     - Example:
+         create an infomercial about your product
+       Can be broken down even further into:
+         write a script for an infomercial about your product
+         rent a TV studio for a day
+         hire a production crew
+         hire an enthusiastic audience
+         film the infomercial
+ - Conclusion: see guess_my_number.py
