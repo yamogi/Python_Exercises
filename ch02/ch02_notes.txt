@@ -1,0 +1,100 @@
+Title:
+ - Types, Variables, and Simple I/O: The Useless Trivia Program
+Chapter Objectives:
+ - To
+   - Use triple-quoted strings and escape sequences to gain more control over text
+   - Make your programs do math
+   - Store data in the computer's memory
+   - Use variables to access and manipulate that data
+   - Get input from users to create interactive programs
+
+***
+Notes
+***
+ - You can use quotes within quotes as long as the inner pair is different to the outer pair
+ - You can print multiple values using a single print() function:
+   - print("Multiple", "words, "using", "one", "print function")
+ - You can even spread it over multiple lines:
+   - print("Multiple",
+           "words",
+           "using",
+           "one",
+           "print function")
+ - print() function prints a newline character by default as a final value
+   - We can manipulate this by using the <end=""> feature, like so:
+   - print("For", end=" ")
+     print("example.") # this will print "For example."
+ - Multiple lines of text can be printed using triple quotes:
+   - print(
+           """
+              Blah blah blah
+              Blah blah blah
+              Blah blah blah
+           """
+     ) # this is useful for ASCII art etc.
+ - Example backslash escape characters:
+   - \n = newline
+     \t = tab
+     \\ = literal backslash
+     \" = literal quote (inside "")
+     \' = literal quote (inside '')
+     \a = system bell
+ - You can concatenate strings using the plus sign:
+   - print("This is an example " + "of string concatenation.")
+   - Concatenation can be used to create one string that spreads across multiple lines
+     - To do so requires the line continuation character (\):
+     - print("This is a sentence that " \
+       + "spans multiple lines")
+ - You can repeat strings by using the * operator:
+   - print("Pie" * 10) #  will print "PiePiePiePiePiePiePiePiePiePie"
+ - Mathematical operators:
+   +  Addition             7 + 3  = 10
+   -  Subtraction          7 - 3  = 4
+   *  Multiplication       7 * 3  = 21
+   /  Division (True)      7 / 3  = 2.3333333333333335
+   // Division (Integer)   7 // 3 = 2
+   %  Modulus              7 % 3  = 1
+ - Variables can be stored using var = value
+     name = "Haydon"
+     print("Hi,", name)
+ - Rules for naming variables:
+   1. A variable name can contain only letters, numbers, and underscores.
+   2. A variable name can't start with a number.
+ - Good-practice guidelines for naming variables
+   - Choose descriptive names
+   - Be consistent
+   - Follow the traditions of the language
+   - Keep the length in check
+ - Getting user input:
+     name = input("Please enter your name: ")
+     print("Hi,", name)         # Hi, Haydon
+     # or
+     print("Hi, " + name + ".") # Hi, Haydon.
+ - String methods: see quotation_manipulation.py
+     upper()        Returns the uppercase version
+     lower()        Returns the lowercase version
+     swapcase()     Makes all upper lower and vice versa
+     capitalize()   Makes first letter uppercase, and the rest lower
+     title()        Makes first letter OF EACH WORD uppercase, and the rest lower
+     strip()        Strips whitespace (tabs, spaces, newlines) from the beginning and the end of the string
+     replace(old, new [,max])
+                    Returns a string where occurrences of the string 'old' are replaced with the string 'new'.
+                    The optional 'max' limits the number of replacements.
+ - Logical error example: concatenating strings of numbers instead of adding them.
+   - To fix, we convert input to a number (int) before calculating total.
+     - Instead of:
+         input("Please enter a number: ")
+       We have:
+         int(input("Please enter a number: "))
+     - Alternatively we could replace int(x) with float(x) or str(x).
+ - Augmented assignment operators:
+   - Instead of:
+       food = food * 52
+     We have:
+       food *= 52
+   - Examples:
+       *=   ->   (x *= 5)   ->   (x = x*5)
+       /=   ->   (x /= 5)   ->   (x = x/5)
+       %=   ->   (x %= 5)   ->   (x = x%5)
+       +=   ->   (x += 5)   ->   (x = x+5)
+       -=   ->   (x -= 5)   ->   (x = x-5)
