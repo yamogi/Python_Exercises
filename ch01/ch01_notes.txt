@@ -1,0 +1,35 @@
+Title
+ - Getting Started: The Game Over Program
+Chapter Objectives:
+ - To learn
+   - What Python is and what's so great about it
+   - How to install Python on your computer
+   - How to print text to the screen
+   - What comments are and how to use them
+   - How to use Python's integrated development environment to write, edit, run, and save your program
+
+***
+Notes
+***
+Python is:
+ - Easy to use
+   - Close to English
+   - "Programming at the speed of thought"
+ - Powerful
+   - GUIs, file processing, variety of data structures
+ - Object-Oriented
+   - Intuitive method of representing information and actions in a program
+   - OOP in Python is optional
+     - Python is FLEXIBLE
+ - A "glue" language
+   - Can be integrated with other languages
+ - Runs everywhere
+   - i.e. platform independent (as long as Python is installed)
+ - Has a strong community
+ - Is free and open-source
+
+***
+First program
+***
+ - print() is a function
+ - Comments are lines beginning with #
