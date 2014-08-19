@@ -14,16 +14,16 @@ price = int(input("Please enter the price of the car: "))
 print("Hmm... we'll have to do some calculations")
 
 tax = price * 0.15 # proportional value
-print("Tax is: " + str(tax))
+print("   Tax is:                " + str(tax))
 license = price * 0.25 # proportional value
-print("License is: " + str(license))
+print("   License is:            " + str(license))
 dealer_prep = 850 # fixed value
-print("Dealer prep is: " + str(dealer_prep))
+print("   Dealer prep is:        " + str(dealer_prep))
 dest_charge = 1200 # fixed value
-print("Destination charge is: " + str(dest_charge))
+print("   Destination charge is: " + str(dest_charge))
 
 price = (price + tax + license + dealer_prep + dest_charge)
 
-print("Okay, the new price is: " + str(price))
+print("Okay, the new price is:   " + str(price))
 
 input("\nPress enter to exit.")
