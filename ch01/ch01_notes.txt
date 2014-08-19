@@ -1,4 +1,4 @@
-Title
+Title:
  - Getting Started: The Game Over Program
 Chapter Objectives:
  - To learn
