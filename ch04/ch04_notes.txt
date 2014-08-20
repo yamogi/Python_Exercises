@@ -1,0 +1,44 @@
+Title:
+ - For Loops, Strings, and Tuples: The Word Jumble Game
+Chapter Objectives:
+ - To
+   - Construct for loops to move through a sequence
+   - Use the range() function to create a sequence of numbers
+   - Treat strings as sequences
+   - Use tuples to harness the power of sequences
+   - Use sequence functions and operators
+   - Index and slice sequences
+
+***
+Notes
+***
+ - for loops repeat something based on a sequence
+   - Simple example ->
+       for letter in word:
+           print(letter)
+   - You can also count using a for loop ->
+       for i in range(10):
+           print(i, end=" ") # 0 1 2 3 4 5 6 7 8 9
+       OR
+       for i in range(0, 50, 5):
+           print(i, end=" ") # 0 5 10 15 20 [...] 40 45
+       OR
+       for i in range(10, 0, -1):
+           print(i, end=" ") # 10 9 8 7 6 5 4 3 2 1
+   - You do not have to use the loop variable
+     - Example ->
+         for i in range(10):
+             print("Hi!") # prints "Hi!" 10 times
+ - Strings are a simple type of sequence
+ - It is easy to work out the length of a string
+     message = input("Please enter a message: ")
+     print("The length of your message is:", len(message))
+ - Finding out if a character is inside another string
+     if "e" in message:
+         # do action 1
+     else:
+         # do action 2
+ - Sequential access is accessing one index after the other, in order
+   - You can also have "random access" which lets you access later elements without the need to access previous ones
+     - See random_access.py
+ - 
