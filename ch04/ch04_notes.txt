@@ -79,3 +79,6 @@ Notes
    - Think of it as an [array] that allows different types of elements
    - See hero_inventory.py
    - See hero_inventory2.py
+   - See tuple_concatenation.py
+ - Conclusion:
+   - See word_jumble.py
