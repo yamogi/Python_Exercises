@@ -41,4 +41,41 @@ Notes
  - Sequential access is accessing one index after the other, in order
    - You can also have "random access" which lets you access later elements without the need to access previous ones
      - See random_access.py
- - 
+ - Strings also have NEGATIVE indexes:
+   >>> word = "index"
+   >>> print(word[-1])
+   x
+   >>> print(word[-2])
+   e
+   >>> print(word[-3])
+   d
+   >>> print(word[-4])
+   n
+   >>> print(word[-5])
+   i
+
+         0     1     2     3     4
+       -----------------------------
+      |  i  |  n  |  d  |  e  |  x  |
+       -----------------------------
+        -5    -4    -3    -2    -1
+
+ - Sequences are either "mutable" or "immutable"
+   - Mutable means changeable - immutable means unchangeable
+   - All created strings are immutable - a change variable simply creates a new string var
+     - This means that you cannot alter, for example, an index of a string
+     - However, you *can* create new strings from existing ones
+       - See no_vowels.py
+ - Note: it's a good idea, when comparing two strings, to convert both to the same case:
+     name.lower() == winner.lower() # "Name" and "name" will match
+ - Slicing strings:
+   - See pizza_slicer.py
+   - Slicing shorthand:
+       word[:4] == word[0:4]
+       word[2:] == word[2:5]
+       word[:]  == word[0:5] # a good one to remember
+ - Tuples are a type of sequence, like strings
+   - Tuples can store elements of any type, not just characters
+   - Think of it as an [array] that allows different types of elements
+   - See hero_inventory.py
+   - See hero_inventory2.py
