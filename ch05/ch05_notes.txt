@@ -160,4 +160,8 @@ Notes
 -------------------------------------------------------------------------------
 DICTIONARIES
 -------------------------------------------------------------------------------
+ - Instead of storing data in sequences, dictionaries stores data in pairs
+   - Think of an actual dictionary: each word is paired with its definition
+   - In Python terms, these are referred to as keys and values
+   - See geek_translator.py
 
