@@ -164,4 +164,22 @@ DICTIONARIES
    - Think of an actual dictionary: each word is paired with its definition
    - In Python terms, these are referred to as keys and values
    - See geek_translator.py
+ - Some dictionary rules
+   - A dictionary can't contain multiple items with the same key
+   - A key has to be immutable, i.e. a string, number or a tuple
+   - Values don't have to be unique. They can be mutable or immutable.
+ - Dictionary methods:
+     get(key, [default])    - Returns the value of key
+                            - If key doesn't exist, then the optional default
+                              is returned
+                            - If key doesn't exist and default isn't specified,
+                              then None is returned
+     keys()                 - Returns a view of all the keys in a dictionary
+     values()               - Returns a view of all the values in a dictionary
+     items()                - Returns a view of all the items in a dictionary
+                            - Each item is a two-element tuple, where the first
+                              element is a key and the second element is the
+                              key's value
+
+ - See hangman.py
 
