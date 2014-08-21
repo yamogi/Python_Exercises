@@ -1,0 +1,25 @@
+Title:
+ - Lists and Dictionaries: The Hangman Game
+Chapter Objectives:
+ - To
+   - Create, index, and slice a list
+   - Add and delete elements from a list
+   - Use list methods to append and sort a list
+   - Use nested sequences to represent even more complex information
+   - Use dictionaries to work with pairs of data
+   - Add and delete dictionary items
+
+***
+Notes
+***
+ - Lists are sequences, like tuples
+   - Lists are mutable - they can be modified
+   - Everything you can do with tuples can also be done with lists
+   - See hero_inventory3.py
+     - Lists can also be concatenated, just like tuples
+ - Understanding list mutability
+   - See hero_inventory3.py again, for:
+     - Assigning a new list element by index
+     - Assigning a new list slice
+     - Deleting a list element
+     - Deleting a list slice
