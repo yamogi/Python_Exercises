@@ -23,3 +23,90 @@ Notes
      - Assigning a new list slice
      - Deleting a list element
      - Deleting a list slice
+ - Using list methods
+   - You can do the following:
+     - Add an element
+     - Remove an element based on its value
+     - Sort a list
+     - Reverse the order of a list
+   - See high_scores.py
+ - Selected list methods:
+     append(value)      - Adds value to end of a list.
+     sort()             - Sorts the elements, smallest value first. Optionally,
+                          you  can  pass  a  Boolean  value  to  the  parameter
+                          reverse.  If  you pass True, the list  will be sorted
+                          with the largest value first.
+     reverse()          - Reverse the order of a list.
+     count(value)       - Returns the number of occurrences of value.
+     index(value)       - Returns the first position of where value occurs.
+     insert(i, value)   - Inserts value at position i.
+     pop([i])           - Returns value at position  i  and removes value  from
+                          the  list.   Providing the  position  number   i   is
+                          optional. Without it, the last element in the list is
+                          removed and returned.
+     remove(value)      - Removes the first occurrence of value from the list.
+
+ - When to use tuples instead of lists?
+   - Tuples are faster than lists
+     - This is because the computer knows they won't change
+     - The speed difference, however, is often negligible
+   - They're great for making constants due to their immutability
+     - They add a level of safety and clarity to your code
+   - Sometimes, tuples are required
+     - Python may require immutable values (example: dictionaries)
+ - For the majority of the time, however, it's probably better to use lists
+ ------------------------------------------------
+ - Nested sequences
+   - Lists and tuples can contain sequences of sequences
+   - Example: presents shopping list
+     - Name 1
+       - Present 1
+       - Present 2
+     - Name 2
+       - Present 1
+       - Present 2
+   - Example Python one-liners:
+     >>> nested = ["first, ("second", third"), ["fourth", "fifth", "sixth"]]
+     >>> print(nested)
+     ["first, ("second", "third"), ["fourth", "fifth", "sixth"]]
+     >>> # six strings, but only three elements
+     >>> # - first element is the string "first"
+     >>> # - second element is the tuple ("second", "third")
+     >>> # - third element is the list ["fourth", "fifth", "sixth"]
+     >>> #---------------------------------------------------------------------
+     >>> scores = [("Moe", 1000), ("Larry", 1500), ("Curly", 3000)]
+     >>> print(scores)
+     [("Moe", 1000), ("Larry", 1500), ("Curly", 3000)]
+     >>> # scores is a list with three elements
+     >>> # each element is a tuple
+     >>> # each tuple has two elements - a string and a number
+     >>> #---------------------------------------------------------------------
+     >>> scores = [("Moe", 1000), ("Larry", 1500), ("Curly", 3000)]
+     >>> print(scores[0])
+     ('Moe', 1000)
+     >>> print(scores[1])
+     ('Larry', 1500)
+     >>> print(scores[2])
+     ('Curly', 3000)
+     >>> # each element is a tuple
+     >>> # what if you want to access one of the elements in a tuple?
+     >>> #---------------------------------------------------------------------
+     >>> a_score = scores[2]
+     >>> print(a_score)
+     ('Curly', 3000)
+     >>> print(a_score[0])
+     Curly
+     >>> #---------------------------------------------------------------------
+     >>> # OR
+     >>> #---------------------------------------------------------------------
+     >>> print(scores[2][0])
+     Curly
+     >>> #---------------------------------------------------------------------
+     >>> # unpacking a sequence
+     >>> name, score = ("Shemp", 175)
+     >>> print(name)
+     Shemp
+     >>> print(score)
+     175
+   - See high_scores2.py
+

@@ -41,5 +41,8 @@ while choice != "0":
             print(score, "isn't in the high scores list.")
     elif choice == "4":
         scores.sort(reverse=True) # sort the scores, largest first
+        print("---------------")
+        print(" Scores sorted")
+        print("---------------")
     else: # anything else...
-        print("Sorry, but", choice, "is not a valid choice.")
+        print("----- Sorry, but", choice, "is not a valid choice. -----")
