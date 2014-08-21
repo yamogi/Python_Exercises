@@ -109,4 +109,55 @@ Notes
      >>> print(score)
      175
    - See high_scores2.py
+ ------------------------------------------------------------------------------
+ - Remember that with variables, the variable does not store a copy of the value, it simply stores the value in memory and then points to it:
+
+                       ----------
+        language ---> |  Python  |
+                       ----------
+
+   - This is important when refering to mutable (changeable) values
+   - For example, when a single variable is referred to multiple timed by
+     different names
+
+     >>> mike = ["khakis", "dress shirt", "jacket"]
+     >>> mr_dawson = mike
+     >>> honey = mike
+     >>> print(mike)
+     ['khakis', 'dress shirt', 'jacket']
+     >>> print(mr_dawson)
+     ['khakis', 'dress shirt', 'jacket']
+     >>> print(honey)
+     ['khakis', 'dress shirt', 'jacket']
+
+        mike --------\
+                        -------------------------------------------
+        mr_dawson ---> |  "khakis"  |  "dress shirt"  |  "jacket"  |
+                        -------------------------------------------
+        honey -------/
+
+     - A change in ANY list affects all of the other ones!
+
+     >>> honey[2] = "red sweater"
+     >>> print(honey)
+     ['khakis', 'dress shirt', 'red sweater']
+     >>> print(mike)
+     ['khakis', 'dress shirt', 'red sweater']
+     >>> print(mr_dawson)
+     ['khakis', 'dress shirt', 'red sweater']
+
+     - Always be aware of <shared references> when using mutable values
+     - You can avoid this by creating a copy of the list through slicing:
+
+     >>> mike = ["khakis", "dress shirt", "jacket"]
+     >>> honey = mike[:]
+     >>> honey[2] = "red sweater"
+     >>> print(honey)
+     ['khakis', 'dress shirt', 'red sweater']
+     >>> print(mike)
+     ['khakis', 'dress shirt', 'jacket']
+
+-------------------------------------------------------------------------------
+DICTIONARIES
+-------------------------------------------------------------------------------
 
