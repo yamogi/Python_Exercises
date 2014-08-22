@@ -1,15 +1,17 @@
-# Write a Tipper program where the user enters a
-# restaurant bill total. The program should then
-# display two amounts: a 15 percent tip and a 20
-# percent tip.
+# ch02_ex03.py
+#
+# Write a Tipper program where the user enters a restaurant bill total. The
+# program should then display two amounts: a 15 percent tip and a 20 percent
+# tip.
+#
 
 print("Hi there!")
-total=float(input("How much was your meal today?\n   "))
+total=float(input("How much was your meal today?\n   ")) # converts to float
 
 print("Calculating tips...")
 
-tip_15 = total * 0.15
-tip_20 = total * 0.2
+tip_15 = total * 0.15 # 15 percent tip
+tip_20 = total * 0.2  # 20 percent tip
 
 # At this point I am unable to work out how
 # to do the correct number of decimal places.
