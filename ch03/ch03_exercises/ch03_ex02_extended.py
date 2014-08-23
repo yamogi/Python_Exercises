@@ -1,5 +1,12 @@
-# Write a program that flips a coin 100 times and then
-# tells you the number of heads and tails.
+# ch03_ex02_extended.py
+#
+# Write a program that flips a coin 100 times and then tells you the number of
+# heads and tails.
+#
+# This is just experimentation: this version of the program allows the user to
+# specify how many times they would like the coin to be flipped. The program
+# then outputs the percentages of heads and tails at the end of the while loop.
+#
 
 import random # import the random module
 
@@ -21,8 +28,8 @@ while flip_count < total_flips:
 
     flip_count += 1
 
-heads_percent = ((heads / total_flips) * 100)
-tails_percent = ((tails / total_flips) * 100)
+heads_percent = ((heads / total_flips) * 100) # calculating heads %
+tails_percent = ((tails / total_flips) * 100) # calculating tails %
 
 print("Coin has been flipped", total_flips, "times!")
 print("\tNumber of heads: " + str(heads) + " (" + str(heads_percent) + "%)")
