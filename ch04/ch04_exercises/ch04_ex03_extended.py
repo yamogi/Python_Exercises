@@ -10,6 +10,7 @@
 # I needed to pick a random index using randrange to ensure that WORDS and
 # HINTS were working off of the same index value.
 #
+
 import random # importing random module
 
 # initialise tuple of possible words
