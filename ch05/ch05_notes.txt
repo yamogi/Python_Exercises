@@ -110,7 +110,8 @@ Notes
      175
    - See high_scores2.py
  ------------------------------------------------------------------------------
- - Remember that with variables, the variable does not store a copy of the value, it simply stores the value in memory and then points to it:
+ - Remember that with variables, the variable does not store a copy of the
+   value, it simply stores the value in memory and then points to it:
 
                        ----------
         language ---> |  Python  |
