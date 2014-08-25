@@ -21,85 +21,85 @@ print("The time has come to allocate your resources!")
 
 print("You have", points_left, "points remaining.")
 
-for i in range(loop_max):
-    print("Attribute", str(i+1), "is currently:\t", attribute_values[i])
+for i in range(loop_max): # go through the attributes and print current values
+    print("Attribute", str(i+1), "is currently:", attribute_values[i])
 
-print()
+print() # extra newline
 
-choice = None
+choice = None # initialise choice
 
-while choice != 0:
-    print("Menu:")
+while choice != 0: # as long as user doesn't intentionally exit
+    print("Menu:") # display the menu
     print("0) Exit")
     print("1) Add a point")
     print("2) Remove a point")
 
-    choice = int(input())
+    choice = int(input()) # obtain choice
 
-    if choice == 0:
+    if choice == 0: # [EXIT]
         print("Goodbye.")
-    elif choice == 1:
-        if points_left > 0:
+    elif choice == 1: # [ADD]
+        if points_left > 0: # if user has points left to spend
             print("  Add a point to which attribute?")
             print("  1) str")
             print("  2) hp")
             print("  3) wis")
             print("  4) dex")
         
-            add_choice = int(input())
+            add_choice = int(input()) # choose the attribute
 
-            attribute_values[add_choice - 1] += 1
-            points_left -= 1
+            attribute_values[add_choice - 1] += 1 # increase attr by 1 point
+            points_left -= 1 # remove 1 point from remaining point count
 
-            print()
+            print() # extra newline
 
             print("You have", points_left, "points remaining.")
 
-            for i in range(loop_max):
+            for i in range(loop_max): # print current attribute values
                 print("Attribute", str(i+1),
                 "is currently:", attribute_values[i])
 
-            print()
+            print() # extra newline
 
-        else:
-            print()
+        else: # if user has no points remaining
+            print() # extra newline
             print("No points remaining to distribute!")
-            print()
+            print() # extra newline
 
-    elif choice == 2:
-        if points_left < MAX_POINTS:
+    elif choice == 2: # [REMOVE]
+        if points_left < MAX_POINTS: # if user has points left to remove
             print("  Remove a point from which attribute?")
             print("  1) str")
             print("  2) hp")
             print("  3) wis")
             print("  4) dex")
 
-            rem_choice = int(input())
+            rem_choice = int(input()) # choose the attribute
 
-            if attribute_values[rem_choice -1] > 0:
-                attribute_values[rem_choice - 1] -= 1
-                points_left += 1
+            if attribute_values[rem_choice -1] > 0: # if attr is zero or above
+                attribute_values[rem_choice - 1] -= 1 # decrease attr value
+                points_left += 1 # add 1 point to remaining point count
 
-                print()
+                print() # extra newline
 
                 print("You have", points_left, "points remaining.")
 
-                for i in range(loop_max):
+                for i in range(loop_max): # print current attribute values
                     print("Attribute", str(i+1),
                     "is currently:", attribute_values[i])
 
-                print()
+                print() # extra newline
 
-            else:
-                print()
+            else: # if attr is zero, it cannot fall below zero
+                print() # extra newline
                 print("Attribute cannot fall below zero!")
-                print()
+                print() # extra newline
 
-        else:
-            print()
+        else: # if user has no points left to remove (i.e. attrs all zero)
+            print() # extra newline
             print("Hit max points!!")
-            print()
+            print() # extra newline
 
-    else:
+    else: # if user doesn't pick any recognised menu choice
         print("Wat.")
-        print()
+        print() # extra newline
